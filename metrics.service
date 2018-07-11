@@ -1,0 +1,14 @@
+[Unit]
+Description=Python task Day3
+After=syslog.target
+After=network.target
+
+[Service]
+#Type=forking
+#PIDFile=/home/student/py_metrics/mectrics.pid
+#WorkingDirectory=/home/student/py_metrics/
+
+ExecStart=/home/student/.pyenv/shims/python /home/student/py_metrics/metrics.py --path /home/student/py_metrics/config 
+
+[Install]
+WantedBy=multi-user.target 

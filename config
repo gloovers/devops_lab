@@ -1,0 +1,4 @@
+[common]
+output = text 
+interval = 1
+log = /home/student/py_metrics/metrics.log
