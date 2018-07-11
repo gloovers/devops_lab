@@ -1,8 +1,8 @@
-import psutil
 import argparse
 import configparser
-import time
 import json
+import psutil
+import time
 
 
 def get_path():
