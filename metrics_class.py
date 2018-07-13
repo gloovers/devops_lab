@@ -5,7 +5,7 @@ import psutil
 import time
 
 
-class CPU:
+class CPU(object):
     """CPU metrics"""
     def __init__(self):
         self.cpu_user = 0
@@ -21,7 +21,7 @@ class CPU:
         self.cpu_idle = cpu.idle
 
 
-class MEM:
+class MEM(object):
     """MEM metrics"""
     def __init__(self):
         self.mem_total = 0
@@ -39,7 +39,7 @@ class MEM:
         self.mem_free = mem.free
 
 
-class MEM_SWAP:
+class MEM_SWAP(object):
     """MEM-SWAP metrics"""
     def __init__(self):
         self.swap_total = 0
@@ -55,7 +55,7 @@ class MEM_SWAP:
         self.swap_free = mem.free
 
 
-class IO:
+class IO(object):
     """IO metrics"""
     def __init__(self):
         self.read = 0
@@ -77,7 +77,7 @@ class IO:
         self.write_time = io.write_time
 
 
-class NETWORK:
+class NETWORK(object):
     """Network metrics"""
     def __init__(self):
         self.bytes_sent = 0
