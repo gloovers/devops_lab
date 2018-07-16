@@ -7,18 +7,18 @@ l_t = []
 count = []
 c_lenght = 0
 for i in range(n):
-    str = input()
-    c_lenght += len(str)
+    str_v = input()
+    c_lenght += len(str_v)
     if c_lenght > 10**6:
         print("The sum of the lengths of all the words has been exceeded.")
         exit(1)
-    if str.islower():
-        l_str.append(str)
+    if str_v.islower():
+        l_str.append(str_v)
     else:
         print("Incorrect input. Program has been closed with error.")
         exit(1)
-for str in l_str:
-    if str not in l_t:
-        l_t.append(str)
-        count.append(l_str.count(str))
+for stroka in l_str:
+    if stroka not in l_t:
+        l_t.append(stroka)
+        count.append(l_str.count(stroka))
 print(count)
