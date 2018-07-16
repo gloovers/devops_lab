@@ -1,4 +1,4 @@
-l_str = [int(str) for str in input("Input l=> ").split()]
+l_str = [int(strr) for strr in input("Input l=> ").split()]
 max_count = 0
 max_v = None
 for element in l_str:
